@@ -1,0 +1,7 @@
+{
+    "@@locale": "pt",
+    "homeAppBarTitle": "Página Inicial",
+    "@counterAppBarTitle": {
+        "description": "Texto mostrado na barra de aplicativos da página inicial"
+    }
+}

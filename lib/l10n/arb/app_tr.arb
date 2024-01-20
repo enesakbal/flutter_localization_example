@@ -1,0 +1,7 @@
+{
+    "@@locale": "tr",
+    "homeAppBarTitle": "Ana Sayfa",
+    "@counterAppBarTitle": {
+        "description": "Ana Sayfanın Uygulama Çubuğunda gösterilen metin"
+    }
+}
