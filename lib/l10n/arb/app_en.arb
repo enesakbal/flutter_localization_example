@@ -10,9 +10,38 @@
     "simpleTextTitle": "Simple Text",
     "simpleTextContent": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
 
+
     "calendarDatePickerTitle": "Calendar Date Picker",
     "calendarDatePickerButton": "Pick Date",
     "calendarDatePickerNoSelected": "No date selected",
 
 
+    "textWithParametersTitle": "A Text With Parameters",
+    "textWithParametersContent": "Hello, my name is {name}. I am {age} years old with {experience} years of experience with Flutter. Born on {birthDate} in {birthPlace}",
+    "@textWithParametersContent": {
+        "description": "A message with name, age, experience, birthDate and birthPlace parameters",
+        "placeholders": {
+            "name": {
+                "type": "String",
+                "example": "Enes"
+            },
+            "age": {
+                "description": "A message with name, age and flutter experience parameters",
+                "type": "int",
+                "example": "23"
+            },
+            "experience": {
+                "type": "double",
+                "example": "2.5"
+            },
+            "birthDate": {
+                "type": "DateTime",
+                "format": "yMMMEd"
+            },
+            "birthPlace": {
+                "type": "String",
+                "example": "Istanbul, Türkiye"
+            }
+        }
+    }
 }
