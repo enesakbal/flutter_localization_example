@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// A custom text widget that displays a title and content in a column layout.
 class CustomText extends StatelessWidget {
   const CustomText({
     super.key,

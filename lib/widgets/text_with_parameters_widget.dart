@@ -8,6 +8,8 @@ class TextWithParametersWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l10n = context.l10n;
+
+    //* Text with parameters
     return CustomText(
       title: l10n.textWithParametersTitle,
       content: Text(

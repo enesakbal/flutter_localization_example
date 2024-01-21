@@ -11,11 +11,12 @@ class CalendarDatePickerWidget extends StatefulWidget {
 }
 
 class _CalendarDatePickerWidgetState extends State<CalendarDatePickerWidget> {
-  late final ValueNotifier<DateTime> selectedDate;
+  //* A value notifier to listen to the selected date
+  late final ValueNotifier<DateTime?> selectedDate;
 
   @override
   void initState() {
-    selectedDate = ValueNotifier<DateTime>(DateTime.now());
+    selectedDate = ValueNotifier<DateTime?>(null);
     super.initState();
   }
 
@@ -33,6 +34,7 @@ class _CalendarDatePickerWidgetState extends State<CalendarDatePickerWidget> {
       title: l10n.calendarDatePickerTitle,
       content: Row(
         children: [
+          //* CalendarDatePicker
           TextButton(
             onPressed: () async {
               selectedDate.value = await showDatePicker(
@@ -47,6 +49,8 @@ class _CalendarDatePickerWidgetState extends State<CalendarDatePickerWidget> {
             child: Text(l10n.calendarDatePickerButton),
           ),
           const Spacer(),
+
+          //* Selected Date
           ValueListenableBuilder<DateTime?>(
             valueListenable: selectedDate,
             builder: (context, value, child) {
