@@ -3,6 +3,7 @@ import 'package:l10n_example/l10n/l10n.dart';
 import 'package:l10n_example/widgets/basic_placeholder_text_widget.dart';
 import 'package:l10n_example/widgets/calendar_date_picker_widget.dart';
 import 'package:l10n_example/widgets/plural_text_widget.dart';
+import 'package:l10n_example/widgets/select_text_widget.dart';
 import 'package:l10n_example/widgets/simple_text_widget.dart';
 
 class HomeView extends StatelessWidget {
@@ -49,6 +50,13 @@ class HomeView extends StatelessWidget {
 
             //* Plural Text Widget Example
             TextWithPluralWidget(),
+
+            Divider(height: 64, thickness: 1),
+
+            //* Select Text Widget Example
+            TextWithSelectWidget(),
+
+            Divider(height: 64, thickness: 1),
           ],
         ),
       ),

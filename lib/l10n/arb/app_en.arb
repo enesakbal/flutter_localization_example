@@ -54,5 +54,17 @@
                 "format": "compact"
             }
         }
-    }
+    },
+
+
+    "pronounTitle": "Select Text",
+    "pronounContent": "{gender, select, male{he} female{she} other{they}}",
+    "@pronounContent": {
+        "description": "A gendered message",
+        "placeholders": {
+            "gender": {
+                "type": "String"
+            }
+        }
+    }    
 }
