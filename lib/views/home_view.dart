@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:l10n_example/l10n/l10n.dart';
+import 'package:l10n_example/widgets/basic_placeholder_text_widget.dart';
 import 'package:l10n_example/widgets/calendar_date_picker_widget.dart';
+import 'package:l10n_example/widgets/plural_text_widget.dart';
 import 'package:l10n_example/widgets/simple_text_widget.dart';
-import 'package:l10n_example/widgets/text_with_parameters_widget.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -41,12 +42,13 @@ class HomeView extends StatelessWidget {
 
             Divider(height: 64, thickness: 1),
 
-            TextWithParametersWidget(),
+            //* Basic Placeholder Text Widget Example
+            BasicPlaceholderTextWidget(),
 
             Divider(height: 64, thickness: 1),
 
-            // Text(l10n.yourSelectedDate(selectedDate.value)),
-            // Text(l10n.numberOfDataPoints(12)),
+            //* Plural Text Widget Example
+            TextWithPluralWidget(),
           ],
         ),
       ),
