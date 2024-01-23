@@ -66,5 +66,37 @@
                 "type": "String"
             }
         }
-    }    
+    },
+
+
+    "numberAndCurrenciesTitle": "Number and Currencies",
+
+    "simpleCurrencyContent": "The price of the product is {currency1}",
+    "@simpleCurrencyContent": {
+        "description": "A message with a formatted int|double parameter",
+        "placeholders": {
+            "currency1": {
+                "type": "double",
+                "format": "simpleCurrency",
+                "optionalParameters": {
+                    "decimalDigits": 2
+                }
+            }
+        }
+    },
+
+    "compactLongContent": "The population of {country} is {compactLong}",
+    "@compactLongContent": {
+        "description": "A message with a formatted double parameter",
+        "placeholders": {
+            "compactLong": {
+                "type": "double",
+                "format": "compactLong"
+            },
+            "country": {
+                "type": "String",
+                "example": "Turkey"
+            }
+        }
+    }
 }
