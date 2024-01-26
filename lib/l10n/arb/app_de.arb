@@ -1,0 +1,102 @@
+{
+    "@@locale": "de",
+    "homeAppBarTitle": "Internationalisierung",
+    "@homeAppBarTitle": {
+        "description": "Zweck der App"
+    },
+
+
+    "simpleTextTitle": "Einfacher Text",
+    "simpleTextContent": "Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text seit 1500, als ein unbekannter Schriftsteller eine Hand voll Wörter nahm und diese durcheinander warf um ein Musterbuch zu erstellen. Es hat nicht nur 5 Jahrhunderte überlebt, sondern auch in Spruch in die elektronische Schriftbearbeitung geschafft (bemerke, nahezu unverändert). Bekannt wurde es 1960, mit dem erscheinen von Letraset, welches Passagen von Lorem Ipsum enhielt, so wie Desktop Software wie Aldus PageMaker - ebenfalls mit Lorem Ipsum.",
+
+
+    "calendarDatePickerTitle": "Kalenderdatumsauswahl",
+    "calendarDatePickerButton": "Wählen Sie Datum",
+    "calendarDatePickerNoSelected": "Kein Datum ausgewählt",
+
+
+    "basicPlaceholderTitle": "Einfacher Platzhaltertext",
+    "basicPlaceholderContent": "Hallo {name}, Sie sind {age} Jahre alt und haben {experience} Jahre Erfahrung. Sie wurden am {birthDate} in {birthPlace} geboren.",
+    "@basicPlaceholderContent": {
+        "description": "Eine Nachricht mit den Parametern Name, Alter, Erfahrung, Geburtsdatum und Geburtsort",
+        "placeholders": {
+            "name": {
+                "type": "String",
+                "example": "Enes"
+            },
+            "age": {
+                "type": "int",
+                "example": "23"
+            },
+            "experience": {
+                "type": "double",
+                "example": "2.5"
+            },
+            "birthDate": {
+                "type": "DateTime",
+                "format": "yMMMEd"
+            },
+            "birthPlace": {
+                "type": "String",
+                "example": "Istanbul, Türkiye"
+            }
+        }
+    },
+
+
+    "nKangaroosTitle": "Pluraltext",
+    "nKangaroosContent": "{count, plural, =0{keine Kängurus} =1{1 Känguru} other{{count} Kängurus}}",
+    "@nKangaroosContent": {
+        "description": "Eine Pluralbotschaft für Kängurus",
+        "placeholders": {
+            "count": {
+                "type": "num",
+                "format": "compact"
+            }
+        }
+    },
+
+
+    "pronounTitle": "Wählen Sie Geschlechtstext aus",
+    "pronounContent": "{gender, select, male{er} female{sie} other{sie}}",
+    "@pronounContent": {
+        "description": "Eine geschlechtsspezifische Botschaft",
+        "placeholders": {
+            "gender": {
+                "type": "String"
+            }
+        }
+    },
+
+
+    "numberAndCurrenciesTitle": "Anzahl und Währungen",
+
+    "simpleCurrencyContent": "Der Preis des Produkts beträgt {currency1}",
+    "@simpleCurrencyContent": {
+        "description": "Eine Nachricht mit einem formatierten int|double-Parameter",
+        "placeholders": {
+            "currency1": {
+                "type": "double",
+                "format": "simpleCurrency",
+                "optionalParameters": {
+                    "decimalDigits": 2
+                }
+            }
+        }
+    },
+
+    "compactLongContent": "Die Bevölkerung der {country} beträgt {compactLong}",
+    "@compactLongContent": {
+        "description": "Eine Nachricht mit einem formatierten Double-Parameter",
+        "placeholders": {
+            "compactLong": {
+                "type": "double",
+                "format": "compactLong"
+            },
+            "country": {
+                "type": "String",
+                "example": "Turkey"
+            }
+        }
+    }
+}
