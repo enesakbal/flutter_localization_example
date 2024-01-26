@@ -97,5 +97,20 @@
                 "example": "Turkey"
             }
         }
+    },
+
+    "percentContent": "{country} dünya nüfusunun yaklaşık {percent} oluşturuyor",
+    "@percentContent": {
+        "description": "Biçimlendirilmiş çift parametreli bir mesaj",
+        "placeholders": {
+            "percent": {
+                "type": "double",
+                "format": "decimalPercentPattern"
+            },
+            "country": {
+                "type": "String",
+                "example": "Turkey"
+            }
+        }
     }
 }

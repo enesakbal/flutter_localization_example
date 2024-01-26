@@ -16,6 +16,7 @@ class NumberAndCurrenciesWidget extends StatelessWidget {
         children: [
           Text(l10n.simpleCurrencyContent(25)),
           Text(l10n.compactLongContent(274000000, 'Indonesia')),
+          Text(l10n.percentContent(0.03, 'Indonesia')),
         ],
       ),
     );

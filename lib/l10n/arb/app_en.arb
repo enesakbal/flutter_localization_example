@@ -98,5 +98,20 @@
                 "example": "Turkey"
             }
         }
+    },
+
+    "percentContent": "{country} accounts for approximately {percent} of the world's population",
+    "@percentContent": {
+        "description": "A message with a formatted double parameter",
+        "placeholders": {
+            "percent": {
+                "type": "double",
+                "format": "decimalPercentPattern"
+            },
+            "country": {
+                "type": "String",
+                "example": "Turkey"
+            }
+        }
     }
 }
