@@ -53,10 +53,23 @@ class _CalendarDatePickerWidgetState extends State<CalendarDatePickerWidget> {
           //* Selected Date
           ValueListenableBuilder<DateTime?>(
             valueListenable: selectedDate,
-            builder: (context, value, child) {
-              return Text(
-                value != null ? DateFormat('dd MMMM yyyy - EEEE').format(value) : l10n.calendarDatePickerNoSelected,
-                style: const TextStyle(fontSize: 14),
+            builder: (_, selectedDate, __) {
+              return Builder(
+                builder: (context) {
+                  if (selectedDate != null) {
+                    final locale = Localizations.localeOf(context);
+
+                    return Text(
+                      DateFormat.yMMMEd(locale.languageCode).format(selectedDate),
+                      style: const TextStyle(fontSize: 14),
+                    );
+                  }
+
+                  return Text(
+                    l10n.calendarDatePickerNoSelected,
+                    style: const TextStyle(fontSize: 14),
+                  );
+                },
               );
             },
           ),
