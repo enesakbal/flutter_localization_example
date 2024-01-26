@@ -1,17 +1,101 @@
 {
     "@@locale": "tr",
-    "homeAppBarTitle": "Internationalization",
+    "homeAppBarTitle": "Uluslararasılaşma",
     "@homeAppBarTitle": {
-        "description": "Purpose of the App"
+        "description": "Uygulamanın Amacı"
     },
 
 
 
-    "simpleTextTitle": "Simple Text",
-    "simpleTextContent": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+    "simpleTextTitle": "Basit Metin",
+    "simpleTextContent": "Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.",
 
-    "calendarDatePickerTitle": "Calendar Date Picker",
-    "calendarDatePickerButton": "Pick Date",
-    "calendarDatePickerNoSelected": "No date selected"
+    "calendarDatePickerTitle": "Takvim Tarih Seçici",
+    "calendarDatePickerButton": "Tarih Seç",
+    "calendarDatePickerNoSelected": "Tarih seçilmedi",
 
+    "basicPlaceholderTitle": "Basit Yer Tutucu Metni",
+    "basicPlaceholderContent": "Merhaba, Ben {name}. {age} yaşındayım, {experience} yıldır Flutter geliştiriyorum. {birthDate} tarihli {birthPlace} doğumluyum",
+    "@basicPlaceholderContent": {
+        "description": "Ad, yaş, deneyim, doğum tarihi ve doğum yeri parametrelerini içeren bir mesaj",
+        "placeholders": {
+            "name": {
+                "type": "String",
+                "example": "Enes"
+            },
+            "age": {
+                "type": "int",
+                "example": "23"
+            },
+            "experience": {
+                "type": "double",
+                "example": "2.5"
+            },
+            "birthDate": {
+                "type": "DateTime",
+                "format": "yMMMEd"
+            },
+            "birthPlace": {
+                "type": "String",
+                "example": "Istanbul, Türkiye"
+            }
+        }
+    },
+
+
+    "nKangaroosTitle": "Çoğul Metin",
+    "nKangaroosContent": "{count, plural, =0{kanguru yok} =1{bir kanguru} other{{count} kanguru}}",
+    "@nKangaroosContent": {
+        "description": "Kangurular için çoğul mesaj",
+        "placeholders": {
+            "count": {
+                "type": "num",
+                "format": "compact"
+            }
+        }
+    },
+
+
+    "pronounTitle": "Cinsiyet Seçimi",
+    "pronounContent": "{gender, select, male{o} female{o} other{onlar}}",
+    "@pronounContent": {
+        "description": "Cinsiyet seçimi için mesaj",
+        "placeholders": {
+            "gender": {
+                "type": "String"
+            }
+        }
+    },
+
+
+    "numberAndCurrenciesTitle": "Sayı ve Para Birimleri",
+
+    "simpleCurrencyContent": "Bu ürünün fiyatı {currency1}",
+    "@simpleCurrencyContent": {
+        "description": "Biçimlendirilmiş int|double parametresine sahip bir mesaj",
+        "placeholders": {
+            "currency1": {
+                "type": "double",
+                "format": "simpleCurrency",
+                "optionalParameters": {
+                    "decimalDigits": 2
+                }
+            }
+        }
+    },
+
+    "compactLongContent": "{country} ülkesinde {compactLong} insan yaşar",
+    "@compactLongContent": {
+        "description": "Biçimlendirilmiş çift parametreli bir mesaj",
+        "placeholders": {
+            "compactLong": {
+                "type": "double",
+                "format": "compactLong"
+            },
+            "country": {
+                "type": "String",
+                "example": "Turkey"
+            }
+        }
+    }
 }

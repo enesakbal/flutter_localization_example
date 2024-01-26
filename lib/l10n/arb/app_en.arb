@@ -57,7 +57,7 @@
     },
 
 
-    "pronounTitle": "Select Text",
+    "pronounTitle": "Select Gender Text",
     "pronounContent": "{gender, select, male{he} female{she} other{they}}",
     "@pronounContent": {
         "description": "A gendered message",
