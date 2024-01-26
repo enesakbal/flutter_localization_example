@@ -7,7 +7,7 @@
 #* - `untranslated-messages-file`: Specifies the name of the file that will contain the untranslated messages.
 
 arb-dir: lib/l10n/arb
-template-arb-file: app_en.arb
+template-arb-file: app_de.arb
 output-localization-file: app_localizations.dart
 nullable-getter: false
 untranslated-messages-file: untranslated_messages.json
