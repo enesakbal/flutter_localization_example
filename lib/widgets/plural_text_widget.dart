@@ -15,9 +15,9 @@ class TextWithPluralWidget extends StatelessWidget {
       content: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          Text(l10n.nKangaroosContent(0)), //* Retruns '0 kangaroos'
-          Text(l10n.nKangaroosContent(1)), //* Retruns '1 kangaroo'
-          Text(l10n.nKangaroosContent(12)), //* Retruns '12 kangaroos'
+          Text(l10n.nKangaroosContent(0)), //* Returns '0 kangaroos'
+          Text(l10n.nKangaroosContent(1)), //* Returns '1 kangaroo'
+          Text(l10n.nKangaroosContent(12)), //* Returns '12 kangaroos'
         ],
       ),
     );
