@@ -5,7 +5,7 @@ In this project, I tried to explain in detail how to do Localizations in Flutter
 
 ## Folder Structure
 ```
-src
+lib
 ├── l10n
 │   ├── arb
 │   │   ├── app_de.arb
@@ -68,6 +68,20 @@ output-localization-file: app_localizations.dart
 nullable-getter: false
 untranslated-messages-file: untranslated_messages.json
 ```
+
+## Extension on BuildContext for easily usage
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
+export 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
+extension AppLocalizationsX on BuildContext {
+  AppLocalizations get l10n => AppLocalizations.of(this);
+}
+```
+
 ---
 
 
