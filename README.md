@@ -269,8 +269,8 @@ class BasicPlaceholderTextWidget extends StatelessWidget {
 ```
 
 ---
-## Prural Text
-<img src="assets/prural_text.gif">
+## Plural Text
+<img src="assets/plural_text.gif">
 
 ### Configuration
 
