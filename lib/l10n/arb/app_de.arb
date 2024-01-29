@@ -22,23 +22,28 @@
         "placeholders": {
             "name": {
                 "type": "String",
-                "example": "Enes"
+                "example": "Enes",
+                "description": "Name des Benutzers"
             },
             "age": {
                 "type": "int",
-                "example": "23"
+                "example": "23",
+                "description": "Alter des Benutzers"
             },
             "experience": {
                 "type": "double",
-                "example": "2.5"
+                "example": "2.5",
+                "description": "Erfahrung des Benutzers"
             },
             "birthDate": {
                 "type": "DateTime",
-                "format": "yMMMEd"
+                "format": "yMMMEd",
+                "example": "Tue, 10 Nov 2020"
             },
             "birthPlace": {
                 "type": "String",
-                "example": "Istanbul, Türkiye"
+                "example": "Istanbul, Türkiye",
+                "description": "Geburtsort des Benutzers"
             }
         }
     },
@@ -51,7 +56,9 @@
         "placeholders": {
             "count": {
                 "type": "num",
-                "format": "compact"
+                "format": "compact",
+                "example": "0",
+                "description": "Anzahl der Kängurus"
             }
         }
     },
@@ -63,7 +70,8 @@
         "description": "Eine geschlechtsspezifische Botschaft",
         "placeholders": {
             "gender": {
-                "type": "String"
+                "type": "String",
+                "example": "he"
             }
         }
     },
@@ -78,6 +86,8 @@
             "currency1": {
                 "type": "double",
                 "format": "simpleCurrency",
+                "example": "1000.0",
+                "description": "Preis des Produkts",
                 "optionalParameters": {
                     "decimalDigits": 2
                 }
@@ -91,11 +101,14 @@
         "placeholders": {
             "compactLong": {
                 "type": "double",
-                "format": "compactLong"
+                "format": "compactLong",
+                "example": "1000.0",
+                "description": "Bevölkerung des Landes"
             },
             "country": {
                 "type": "String",
-                "example": "Turkey"
+                "example": "Turkey",
+                "description": "Name des Landes"
             }
         }
     },
@@ -106,14 +119,14 @@
         "placeholders": {
             "percent": {
                 "type": "double",
-                "format": "decimalPercentPattern"
+                "format": "decimalPercentPattern",
+                "example": "1000.0"
             },
             "country": {
                 "type": "String",
-                "example": "Turkey"
+                "example": "Turkey",
+                "description": "Name des Landes"
             }
         }
     }
-
-
 }

@@ -22,23 +22,29 @@
         "placeholders": {
             "name": {
                 "type": "String",
-                "example": "Enes"
+                "example": "Enes",
+                "description": "Name of the user"
             },
             "age": {
                 "type": "int",
-                "example": "23"
+                "example": "23",
+                "description": "Age of the user"
             },
             "experience": {
                 "type": "double",
-                "example": "2.5"
+                "example": "2.5",
+                "description": "Experience of the user"
             },
             "birthDate": {
                 "type": "DateTime",
-                "format": "yMMMEd"
+                "format": "yMMMEd",
+                "example": "1996-08-15",
+                "description": "Birth date of the user"
             },
             "birthPlace": {
                 "type": "String",
-                "example": "Istanbul, Türkiye"
+                "example": "Istanbul, Türkiye",
+                "description": "Birth place of the user"
             }
         }
     },
@@ -51,7 +57,9 @@
         "placeholders": {
             "count": {
                 "type": "num",
-                "format": "compact"
+                "format": "compact",
+                "example": "0",
+                "description": "Number of kangaroos"
             }
         }
     },
@@ -63,7 +71,8 @@
         "description": "A gendered message",
         "placeholders": {
             "gender": {
-                "type": "String"
+                "type": "String",
+                "example": "he"
             }
         }
     },
@@ -78,6 +87,8 @@
             "currency1": {
                 "type": "double",
                 "format": "simpleCurrency",
+                "description": "Price of the product",
+                "example": "1000.0",
                 "optionalParameters": {
                     "decimalDigits": 2
                 }
@@ -91,11 +102,13 @@
         "placeholders": {
             "compactLong": {
                 "type": "double",
-                "format": "compactLong"
+                "format": "compactLong",
+                "description": "Population of the country"
             },
             "country": {
                 "type": "String",
-                "example": "Turkey"
+                "example": "Turkey",
+                "description": "Name of the country"
             }
         }
     },
@@ -106,11 +119,14 @@
         "placeholders": {
             "percent": {
                 "type": "double",
-                "format": "decimalPercentPattern"
+                "format": "decimalPercentPattern",
+                "description": "Percentage of the world's population",
+                "example": "0.01"
             },
             "country": {
                 "type": "String",
-                "example": "Turkey"
+                "example": "Turkey",
+                "description": "Name of the country"
             }
         }
     }
